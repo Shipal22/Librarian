@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex;  align-items: center; justify-content: center;margin-top:15%;">
+        <div class=".container">
+            <h2>IIT(ISM), Welcomes you </h2>
+            <p style="margin-bottom: 5px;">Please enter details</p>
+            <form style="display: flex; flex-direction: column; flex-wrap: wrap; gap: 5px;" action="/details" method="post">
+                <input  type="text" name="adm_no" id="" placeholder="Admission Number">
+                <input type="email" name="email" required pattern="^[a-zA-Z0-9._%+-]+@iitism\.ac\.in$"placeholder="yourname@iitism.ac.in">
+                <input type="submit" name="Submit" id="" value="Enter" >
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>

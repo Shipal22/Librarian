@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="/<%=adm_no%>/mainpage">Go back to home</a>
+    <h1>Books borrowed : </h1>
+    <div class="all_book" style="margin-top: 0px;">
+        <%  std_details.books_borrowed.forEach(function(val){%> 
+        <div class="book" style="display: flex; position: relative;flex-wrap: none;margin-top: 20px;">
+        <div class="thmbn" style="height: 100%; width:fit-content; object-fit: cover;"><img src="https://covers.openlibrary.org/b/isbn/<%=val.isbn%>-M.jpg" alt=""></div>
+        <div class="details" style="margin-left: 20px;">
+            <div class="name" style="font-size: 24px;"><%=val.name%></div>
+            <div class="author" style="font-size: 14px;"><%=val.author%></div>
+            <div class="b_date" style="font-size: 20px; "><%=val.date%></div>
+            <div class="div_date" style="font-size: 20px;position: absolute; margin-top: 15px; bottom: 20px"><%= new Date().toLocaleString() %></div>
+            <div class="fine" style="font-size: 20px;position: absolute; bottom:0">fine : 0 Rs
+                <div style="position: absolute; left :100px; bottom: 0;font-size: 20px;"><a href="">return</a></div>
+            </div>
+        </div>
+        </div>  
+        <%})%>
+        
+    </div>
+    <script>
+       
+    </script>
+</body>
+
+</html>

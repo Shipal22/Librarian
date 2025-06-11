@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Welcome , <%=Adm%>
+    </h1>
+    <div class="borrowed">
+        <h3>Already borrowed books : <%=size%>
+        </h3>
+        <% if(size>0){ %>
+            <a href="/<%=Adm%>/return">Details/Return</a>
+            <% } %>
+    </div>
+    <div><a  href="/<%=Adm%>/borrow">Borrow</a></div>
+</body>
+
+</html>
